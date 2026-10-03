@@ -202,7 +202,7 @@
       <div class="sensor-name">SMS</div>
       <div class="sensor-detail">
         Direction, time.
-        <span class="privacy">Contact number and message body are SHA-256 hashed; raw content is never stored.</span>
+        <span class="privacy">The contact number is SHA-256 hashed; message content is never read or stored.</span>
       </div>
     </li>
     <li>
@@ -224,6 +224,20 @@
       <div class="sensor-detail">
         On / off / locked / unlocked events.
         <span class="privacy">No content.</span>
+      </div>
+    </li>
+    <li>
+      <div class="sensor-name">Steps</div>
+      <div class="sensor-detail">
+        Step counts at intervals, where the device has a step sensor.
+        <span class="privacy">No identifiers.</span>
+      </div>
+    </li>
+    <li>
+      <div class="sensor-name">Proximity &amp; orientation</div>
+      <div class="sensor-detail">
+        Near/far distance and device orientation (face up/down/upright).
+        <span class="privacy">No identifiers.</span>
       </div>
     </li>
     <li>
