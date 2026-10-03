@@ -238,6 +238,18 @@
   }
 
   /* — What's collected — */
+  .collect-intro {
+    font-size: 15px;
+    color: var(--ink-2);
+    margin: 0 0 20px;
+    line-height: 1.6;
+  }
+  .collect-note {
+    font-size: 14px;
+    color: var(--ink-2);
+    margin: 16px 0 18px;
+    line-height: 1.6;
+  }
   .collect-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -248,8 +260,7 @@
     margin: 0 0 10px;
     font-size: 13px;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.2px;
     color: var(--ink);
   }
   .collect-col ul {
@@ -379,7 +390,7 @@
 
   <p class="welcome">Welcome — thanks for taking part</p>
   <h1><strong>DETECTMiND</strong>: Detecting Emerging Traits of Mental Disorders by Leveraging Smartphone-based Digital Phenotyping and Explainable AI</h1>
-  <p class="lede">For invited participants only. If you've been asked to take part, you can install the app below.</p>
+  <p class="lede">This app is for people who've been invited to a specific study. If a researcher has asked you to take part and given you a code, you're in the right place — you can install the app below.</p>
 
   <div class="researcher">
     <img src="assets/researcher.webp" alt="Dr Anoop Kadan" onerror="this.style.display='none'" />
@@ -419,39 +430,51 @@
   <ol class="steps">
     <li><strong>Download</strong> using the button above.</li>
     <li><strong>Open the file</strong> from your notification or your <em>Files</em> app → <em>Downloads</em>. If Android asks, allow your browser to install unknown apps, then come back.</li>
-    <li><strong>Install, then open</strong> the app. It will guide you through the consent screen, the permissions, and asking for your 6-character participant code.</li>
+    <li><strong>Install and open</strong> the app. It walks you through the consent screen and the permissions it needs.</li>
+    <li><strong>Choose your study and enter your code.</strong> The app shows the study you've been invited to; pick it and type the 6-character code your researcher gave you. The code is what links your phone to the right study.</li>
   </ol>
-  <p class="after">Once you're set up, the app runs quietly in the background. You don't need to open it again unless asked.</p>
+  <p class="after">After that the app runs quietly in the background. You don't need to open it again unless we ask you to.</p>
 
   <hr />
 
   <h2>What's collected</h2>
+  <p class="collect-intro">
+    Every study is set up differently. Your study decides which of the things
+    below are actually recorded on your phone — it may be a few of them, or most
+    of them. The app shows you exactly what's switched on for your study before
+    you agree, and again on its home screen afterwards.
+  </p>
   <div class="collect-grid">
     <div class="collect-col yes">
-      <h3>Recorded</h3>
+      <h3>May be recorded (depending on your study)</h3>
       <ul>
-        <li>App usage and screen state</li>
-        <li>Notifications metadata</li>
-        <li>Call and SMS frequency (hashed)</li>
+        <li>App usage and screen on/off</li>
+        <li>Notification activity (not the content)</li>
+        <li>How often you call or text (numbers are scrambled)</li>
         <li>Location and ambient light</li>
-        <li>Taps and scrolls (no content)</li>
+        <li>Taps and scrolls — the type, never what's on screen</li>
         <li>Steps and device motion</li>
-        <li>Battery state</li>
-        <li>Ecological Momentary Assessment</li>
+        <li>Battery level</li>
+        <li>Short in-app questionnaires</li>
       </ul>
     </div>
     <div class="collect-col no">
-      <h3>Never recorded</h3>
+      <h3>Never recorded — in any study</h3>
       <ul>
-        <li>Message or notification content</li>
-        <li>What you type or see on screen</li>
-        <li>Phone numbers in plain text</li>
+        <li>The words in your messages, emails, or notifications</li>
+        <li>Anything you type or see on screen</li>
+        <li>Phone numbers in a readable form</li>
         <li>Photos, audio, or video</li>
-        <li>Web browsing history</li>
-        <li>Banking or payment activity</li>
+        <li>Your web browsing history</li>
+        <li>Your banking or payment activity</li>
       </ul>
     </div>
   </div>
+  <p class="collect-note">
+    You stay in control: you can turn off any permission in your phone's settings
+    at any time, and you can withdraw from the study whenever you like — the app
+    stops collecting the moment you do.
+  </p>
   <p><a class="collect-link" href="privacy.html">Read the full privacy policy →</a></p>
 
   <div class="foot">
