@@ -162,7 +162,7 @@
   <a class="back" href="./">← DETECTMiND home</a>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated 6 June 2026 · Data controller: Anoop Kadan | University of Southampton</p>
+  <p class="meta">Last updated 18 October 2026 (app version 1.1.0) · Data controller: Anoop Kadan | University of Southampton</p>
 
   <p class="lede">This policy explains how the <strong>DETECTMiND</strong> research app collects, uses, and protects data from participants. By installing and using the app, you agree to the practices described here.</p>
 
@@ -180,8 +180,8 @@
     <li>
       <div class="sensor-name">Notifications</div>
       <div class="sensor-detail">
-        App that posted a notification, time, title (if shown on the lock screen).
-        <span class="privacy">No notification body content stored.</span>
+        Which app posted a notification, when it appeared, and when it was opened or dismissed.
+        <span class="privacy">Notification titles and content are never stored.</span>
       </div>
     </li>
     <li>
@@ -202,7 +202,7 @@
       <div class="sensor-name">SMS</div>
       <div class="sensor-detail">
         Direction, time.
-        <span class="privacy">The contact number is SHA-256 hashed; message content is never read or stored.</span>
+        <span class="privacy">The contact number is SHA-256 hashed. The app never reads message text, so it is neither stored nor hashed.</span>
       </div>
     </li>
     <li>
@@ -243,8 +243,8 @@
     <li>
       <div class="sensor-name">Gestures</div>
       <div class="sensor-detail">
-        Taps, scrolls, and long-presses: the type of action and which app, only.
-        <span class="privacy">No on-screen content; OS-enforced via the accessibility privacy flag.</span>
+        Taps, scrolls and long-presses (the type of action and which app), and in social and video apps, when you scroll a feed or swipe to the next post or short video (reel): how far, how many items, and how long each full-screen post stayed on screen.
+        <span class="privacy">To recognise feeds and reels the app looks only at the structure of the screen layout (the size and position of scrolling areas and the app's internal names for them, such as “reel_recycler”). It never reads or stores any text, images or other content shown on screen, or anything you type.</span>
         <span class="privacy">If your study collects gestures, the app can notify you to pause gesture collection when a configured banking app is opened. Banking activity is never collected or transmitted.</span>
       </div>
     </li>
@@ -267,20 +267,27 @@
     <li>Your real name or contact details (only your participant ID)</li>
   </ul>
 
-  <h2>3. How data is stored and transmitted</h2>
+  <h2>3. Operational data</h2>
+  <p>To check that the study is running properly, the app also sends: your phone's model, Android version and app version; its Android ID (an identifier Android gives this app on your phone, used only to spot the same phone being enrolled twice); which permissions are currently granted (including whether the app is exempt from battery optimisation); when a permission is turned on or off; when gesture collection is paused or resumed; and a log of each upload.</p>
+
+  <h2>4. How data is stored and transmitted</h2>
   <ul>
     <li>All data is first stored locally on your device's encrypted app storage.</li>
     <li>Data is uploaded over HTTPS (TLS 1.2+) to a research database hosted by Supabase Inc. on EU servers.</li>
     <li>Each upload is associated only with your study participant ID (a random UUID); your real identity is held separately by the research team in line with university data-management procedures.</li>
+    <li>When you join a study the app creates a random secret <strong>device token</strong> for your phone. It is sent with every upload so that only your phone can add data for your participant ID. The server keeps only a one-way hash of it, and on the phone it is stored encrypted with a key held in Android's secure keystore. It is not included in phone backups; if you move to a new phone you simply join the study again.</li>
   </ul>
 
-  <h2>4. Security</h2>
+  <h2>5. Running in the background</h2>
+  <p>During setup the app asks Android to exempt it from battery optimisation, and on some phones (for example Xiaomi, Huawei, Honor, Samsung, OnePlus, Oppo, Realme and Vivo) it shows how to allow it to start automatically. This only keeps data collection from being paused to save battery; it gives the app no access to any other data. You can undo it at any time in your phone's battery settings.</p>
+
+  <h2>6. Security</h2>
   <p>The Android app stores data locally on your device using Android's standard app-private storage, encrypted at rest by the OS. Network transmission uses TLS 1.2 or higher. The server uses row-level security to ensure only the research team can read participant data.</p>
 
-  <h2>5. Children</h2>
+  <h2>7. Children</h2>
   <p>This app is not intended for use by anyone under 18. We do not knowingly collect data from minors.</p>
 
-  <h2>6. Contact</h2>
+  <h2>8. Contact</h2>
   <p>For any questions about how your data is handled, contact:</p>
   <ul>
     <li><strong>Dr Anoop Kadan</strong> · <a href="mailto:A.Kadan@soton.ac.uk">A.Kadan@soton.ac.uk</a></li>

@@ -12,13 +12,13 @@ This repo contains only the install instructions, privacy policy, and signed APK
 docs/
 ├── index.html         # landing page
 ├── privacy.html       # privacy policy (required for IRB & Play Protect)
-├── DETECTMiND.apk     # latest testing release (v1.0.0, versionCode 150)
+├── DETECTMiND.apk     # latest release (v1.1.0, versionCode 160)
 └── assets/            # screenshots, icons, researcher photo
 ```
 
 ## Updating the APK
 
-1. Build a signed release APK in the main DETECTMiND-Android repo.
+1. Build a signed release APK in the main DETECTMiND-Android repo (`./gradlew assembleRelease`; signing key in `~/.detectmind/`, see that repo's README).
 2. Copy it to `docs/DETECTMiND.apk` (overwrite the previous version).
 3. Update the version number / changelog in `docs/index.html`.
 4. Commit + push. GitHub Pages auto-rebuilds within ~30s.
