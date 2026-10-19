@@ -162,7 +162,7 @@
   <a class="back" href="./">← DETECTMiND home</a>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated 18 October 2026 (app version 1.1.0) · Data controller: Anoop Kadan | University of Southampton</p>
+  <p class="meta">Last updated 19 October 2026 (app version 1.2.0) · Data controller: Anoop Kadan | University of Southampton</p>
 
   <p class="lede">This policy explains how the <strong>DETECTMiND</strong> research app collects, uses, and protects data from participants. By installing and using the app, you agree to the practices described here.</p>
 
@@ -194,8 +194,9 @@
     <li>
       <div class="sensor-name">Calls</div>
       <div class="sensor-detail">
-        Direction (incoming, outgoing, missed), duration, time.
-        <span class="privacy">Phone numbers are SHA-256 hashed before storage.</span>
+        Phone calls: direction (incoming, outgoing, missed), answered or not, video or not, times, ring and talk time.
+        Calls in other apps (such as WhatsApp, Botim, Instagram or Zoom): which app, direction, answered or not, audio or video, times, ring and talk time.
+        <span class="privacy">Phone numbers are SHA-256 hashed before storage. For calls in other apps the app never records who you called, and it never records anything that is said or shown: it only notices that the microphone or camera is in use and that the app shows a call notification.</span>
       </div>
     </li>
     <li>
@@ -243,8 +244,8 @@
     <li>
       <div class="sensor-name">Gestures</div>
       <div class="sensor-detail">
-        Taps, scrolls and long-presses (the type of action and which app), and in social and video apps, when you scroll a feed or swipe to the next post or short video (reel): how far, how many items, and how long each full-screen post stayed on screen.
-        <span class="privacy">To recognise feeds and reels the app looks only at the structure of the screen layout (the size and position of scrolling areas and the app's internal names for them, such as “reel_recycler”). It never reads or stores any text, images or other content shown on screen, or anything you type.</span>
+        Taps, scrolls and long-presses (the type of action and which app), a count of screen touches (time and app only, never where you touched), and in social and video apps, when you scroll a feed or swipe to the next post or short video (reel): how far, how many items, and how long each full-screen post stayed on screen.
+        <span class="privacy">To recognise feeds and reels the app looks only at the structure of the screen layout (the size and position of scrolling areas and the app's internal names for them, such as “reel_recycler”). It never reads or stores any text, images or other content shown on screen, or anything you type. Touches are not counted at all while the keyboard is open or the phone is locked.</span>
         <span class="privacy">If your study collects gestures, the app can notify you to pause gesture collection when a configured banking app is opened. Banking activity is never collected or transmitted.</span>
       </div>
     </li>
