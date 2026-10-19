@@ -12,7 +12,7 @@ This repo contains only the install instructions, privacy policy, and signed APK
 docs/
 ├── index.html         # landing page
 ├── privacy.html       # privacy policy (required for IRB & Play Protect)
-├── DETECTMiND.apk     # latest release (v1.1.1, versionCode 161)
+├── DETECTMiND.apk     # latest release (v1.1.2, versionCode 162)
 └── assets/            # screenshots, icons, researcher photo
 ```
 
